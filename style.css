@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: rgb(12, 17, 27);
+  height: 100vh;
+  width: 100%;
+}
+
+.container > h2 {
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.main {
+  padding: 70px 20px; /* Updated padding to be responsive */
+  max-width: 1000px; /* Added max-width to center content on larger screens */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+form {
+  color: #fff;
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+.input-1,
+.input-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the form elements */
+}
+
+.input button {
+  margin: 10px auto; /* Center the button horizontally with 10px top and bottom margin */
+  margin-left: 38px;
+  width: 150px;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1.2rem; /* Use rem instead of vw for better scalability */
+}
+
+#box-1,
+#box-2,
+#box-3,
+#box-4 {
+  margin: 10px;
+  width: 45%; /* Adjusted width to allow some spacing between boxes */
+}
+
+label {
+  display: block; /* Display the label and input box in separate lines */
+  margin-bottom: 5px; /* Add some space between label and input box */
+}
+#Update {
+  display: none;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  border: 1px solid #43a515;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+}
+.second {
+  /* padding-left: 210px; */
+  margin-top: 20px;
+}
+th {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 5px 2px;
+  /* width: 17vw; */
+}
+
+/* Add styles to input data loaded from local storage */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #fff;
+}
+
+td {
+  padding: 8px;
+  color: #fff;
+}
+
+/* Style buttons */
+.deleteBtn,
+.updateBtn {
+  background-color: #ff2a2a;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s;
+}
+
+.deleteBtn:hover,
+.updateBtn:hover {
+  background-color: #e60000;
+}
+
+/* Media Query for screens with a maximum width of 700px */
+@media (max-width: 700px) {
+  .main {
+    padding: 70px 10px; /* Adjust padding for smaller screens */
+  }
+  .input button {
+    margin-left: 10px;
+  }
+
+  #box-1,
+  #box-2,
+  #box-3,
+  #box-4 {
+    width: 100%; /* Make the boxes take the full width of the container */
+  }
+
+  th {
+    width: auto;
+  }
+}

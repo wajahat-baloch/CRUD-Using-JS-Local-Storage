@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD using JS Local Storage</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>CRUD using JS Local Storage</h2>
+      <div class="main">
+        <form>
+          <div class="input-1">
+            <div id="box-1">
+              <label for="name">Name: </label>
+              <input type="text" placeholder="Enter name" id="name" />
+            </div>
+
+            <div id="box-2">
+              <label for="age">Age: </label>
+              <input type="text" placeholder="Enter age" id="age" />
+            </div>
+          </div>
+
+          <div class="input-2">
+            <div id="box-3">
+              <label for="address">Address: </label>
+              <input type="text" placeholder="Enter address" id="address" />
+            </div>
+            <div id="box-4">
+              <label for="email">Email: </label>
+              <input type="text" placeholder="Enter Email" id="email" />
+            </div>
+          </div>
+
+          <div class="input">
+            <button id="Submit" onclick="addData()">Add Data</button>
+            <button id="Update" style="display: none;" onclick="updateData()">Update Data</button>
+
+          </div>
+        </form>
+      </div>
+
+      <hr />
+      <div class="second">
+        <table id="crudTable">
+          <thead id="the">
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Address</th>
+              <th>Email</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
